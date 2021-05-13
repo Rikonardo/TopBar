@@ -36,6 +36,8 @@ By default, TopBar has the following pre-installed widgets:
 - [TopBar.Widgets.Shortcut](#TopBar.Widgets.Shortcut)
 - [TopBar.Widgets.LineSpacer](#TopBar.Widgets.LineSpacer)
 
+---
+
 ### TopBar.Widgets.Clock
 
 Displays the current time
@@ -45,6 +47,8 @@ Displays the current time
 - `date` (bool) - Whether the date should be displayed| Default: `false`
 - `seconds` (bool) - Whether the seconds counter should be displayed | Default: `false`
 - `text-color` (string) - HEX color code | Default: `"#BBBBBB"`
+
+---
 
 ### TopBar.Widgets.CPULoad
 
@@ -58,6 +62,8 @@ Displays the load on each of the processor cores
 - `line-width` (int) - Width of rectangles| Default: `5`
 - `radius` (int) - Radius of rectangles | Default: `2`
 
+---
+
 ### TopBar.Widgets.RAMUsageBar
 
 Displays the current RAM usage
@@ -70,6 +76,8 @@ Displays the current RAM usage
 - `height` (int) - Height of the progress bar| Default: `10`
 - `radius` (int) - Radius of the progress bar rectangle | Default: `2`
 
+---
+
 ### TopBar.Widgets.RAMUsageText
 
 Displays the current RAM usage in percent
@@ -77,6 +85,8 @@ Displays the current RAM usage in percent
 **Settings:**
 
 - `color` (string) - HEX color code| Default: `"#BBBBBB"`
+
+---
 
 ### TopBar.Widgets.CustomText
 
@@ -87,6 +97,8 @@ Displays custom text
 - `color` (string) - HEX color code| Default: `"#BBBBBB"`
 - `text` (string) - Text to display| Default: `""`
 
+---
+
 ### TopBar.Widgets.TextFromFile
 
 Displays contents of text file (refresh every 500ms)
@@ -95,6 +107,8 @@ Displays contents of text file (refresh every 500ms)
 
 - `color` (string) - HEX color code| Default: `"#BBBBBB"`
 - `file` (string) - Path to text file| Default: `""`
+
+---
 
 ### TopBar.Widgets.Shortcut
 
@@ -106,6 +120,8 @@ Shortcut to lunch app or run command in one click
 - `icon` (string) - Path to icon file| Optional,  by default icon extracting from target executable
 - `title` (string) - Tooltip text| Optional,  by default equals `command` value
 
+---
+
 ### TopBar.Widgets.LineSpacer
 
 Spacer used to visually separate widget groups
@@ -115,4 +131,10 @@ Spacer used to visually separate widget groups
 - `color` (string) - HEX color code | Default: `"#888888"`
 - `width` (int) - Width of the  spacer| Default: `1`
 - `height` (int) - Height of the spacer| Default: `10`
+
+---
+
+[![](https://img.shields.io/liberapay/goal/Rikonardo.svg?logo=liberapay)](https://liberapay.com/Rikonardo/donate)
+
+[Support me](https://liberapay.com/Rikonardo/donate)
 
