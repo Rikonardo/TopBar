@@ -4,11 +4,13 @@ Simple and modern topbar for Windows
 
 [**To download the installer, click here**](https://github.com/Rikonardo/TopBar/releases/latest)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Rikonardo/TopBar)![GitHub all releases](https://img.shields.io/github/downloads/Rikonardo/TopBar/total)![.NET Framework version](https://img.shields.io/badge/.NET%20Framework-4.6%2B-green)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Rikonardo/TopBar) ![GitHub all releases](https://img.shields.io/github/downloads/Rikonardo/TopBar/total) ![.NET Framework version](https://img.shields.io/badge/.NET%20Framework-4.6%2B-green)
 
-Keep all the data you need in sight with convenient widgets on right side of TopBar![](https://i.imgur.com/rGjVMu9.png) 
+Keep all the data you need in sight with convenient widgets on right side of TopBar
+![](https://i.imgur.com/rGjVMu9.png) 
 
-The title of the selected window is always displayed on the left side of the TopBar![](https://i.imgur.com/h8RZA6b.png) 
+The title of the selected window is always displayed on the left side of the TopBar
+![](https://i.imgur.com/h8RZA6b.png) 
 
 Everything is configured using a single json configuration file (`%AppData%/TopBar/config.json`)
 
@@ -83,7 +85,6 @@ Displays custom text
 **Settings:**
 
 - `color` (string) - HEX color code| Default: `"#BBBBBB"`
-
 - `text` (string) - Text to display| Default: `""`
 
 ### TopBar.Widgets.TextFromFile
@@ -93,7 +94,6 @@ Displays contents of text file (refresh every 500ms)
 **Settings:**
 
 - `color` (string) - HEX color code| Default: `"#BBBBBB"`
-
 - `file` (string) - Path to text file| Default: `""`
 
 ### TopBar.Widgets.Shortcut
@@ -103,7 +103,6 @@ Shortcut to lunch app or run command in one click
 **Settings:**
 
 - `command` (string) - Path to executable or cmd command| Default: `"explorer.exe"`
-
 - `icon` (string) - Path to icon file| Optional,  by default icon extracting from target executable
 - `title` (string) - Tooltip text| Optional,  by default equals `command` value
 
