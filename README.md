@@ -7,9 +7,11 @@ Simple and modern topbar for Windows
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Rikonardo/TopBar) ![GitHub all releases](https://img.shields.io/github/downloads/Rikonardo/TopBar/total) ![.NET Framework version](https://img.shields.io/badge/.NET%20Framework-4.6%2B-green)
 
 Keep all the data you need in sight with convenient widgets on right side of TopBar
+
 ![](https://i.imgur.com/rGjVMu9.png) 
 
 The title of the selected window is always displayed on the left side of the TopBar
+
 ![](https://i.imgur.com/h8RZA6b.png) 
 
 Everything is configured using a single json configuration file (`%AppData%/TopBar/config.json`)
@@ -18,7 +20,7 @@ Everything is configured using a single json configuration file (`%AppData%/TopB
 
 You can create your own TopBar widgets by developing an extension
 
-- The widget class must be public public and implement the "TopBar.iWidgetBase" interface.
+- The widget class must be public and implement the "TopBar.iWidgetBase" interface.
 - In addition, the widget class must contain a constructor that takes a settings object of type "dynamic" as an argument.
 - The extension must be a dll .NET class library.
 - Extensions are installed by being located in the `%AppData%/TopBar/extensions` folder
@@ -44,7 +46,7 @@ Displays the current time
 
 **Settings:**
 
-- `date` (bool) - Whether the date should be displayed| Default: `false`
+- `date` (bool) - Whether the date should be displayed | Default: `false`
 - `seconds` (bool) - Whether the seconds counter should be displayed | Default: `false`
 - `text-color` (string) - HEX color code | Default: `"#BBBBBB"`
 
@@ -59,7 +61,7 @@ Displays the load on each of the processor cores
 **Settings:**
 
 - `color` (string) - HEX color code or one of next values: `"rainbow"`, `"from-percentage"` | Default: `"#BBBBBB"`
-- `line-width` (int) - Width of rectangles| Default: `5`
+- `line-width` (int) - Width of rectangles | Default: `5`
 - `radius` (int) - Radius of rectangles | Default: `2`
 
 ---
@@ -84,7 +86,7 @@ Displays the current RAM usage in percent
 
 **Settings:**
 
-- `color` (string) - HEX color code| Default: `"#BBBBBB"`
+- `color` (string) - HEX color code | Default: `"#BBBBBB"`
 
 ---
 
@@ -94,8 +96,8 @@ Displays custom text
 
 **Settings:**
 
-- `color` (string) - HEX color code| Default: `"#BBBBBB"`
-- `text` (string) - Text to display| Default: `""`
+- `color` (string) - HEX color code | Default: `"#BBBBBB"`
+- `text` (string) - Text to display | Default: `""`
 
 ---
 
@@ -105,8 +107,8 @@ Displays contents of text file (refresh every 500ms)
 
 **Settings:**
 
-- `color` (string) - HEX color code| Default: `"#BBBBBB"`
-- `file` (string) - Path to text file| Default: `""`
+- `color` (string) - HEX color code | Default: `"#BBBBBB"`
+- `file` (string) - Path to text file | Default: `""`
 
 ---
 
@@ -116,9 +118,9 @@ Shortcut to lunch app or run command in one click
 
 **Settings:**
 
-- `command` (string) - Path to executable or cmd command| Default: `"explorer.exe"`
-- `icon` (string) - Path to icon file| Optional,  by default icon extracting from target executable
-- `title` (string) - Tooltip text| Optional,  by default equals `command` value
+- `command` (string) - Path to executable or cmd command | Default: `"explorer.exe"`
+- `icon` (string) - Path to icon file | Optional,  by default icon extracting from target executable
+- `title` (string) - Tooltip text | Optional,  by default equals `command` value
 
 ---
 
@@ -129,8 +131,8 @@ Spacer used to visually separate widget groups
 **Settings:**
 
 - `color` (string) - HEX color code | Default: `"#888888"`
-- `width` (int) - Width of the  spacer| Default: `1`
-- `height` (int) - Height of the spacer| Default: `10`
+- `width` (int) - Width of the spacer | Default: `1`
+- `height` (int) - Height of the spacer | Default: `10`
 
 ---
 
