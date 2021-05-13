@@ -64,7 +64,7 @@ Displays the current RAM usage
 
 **Settings:**
 
-- `color` (string) - HEX color code or `"from-percentage"` | Default: `"#BBBBBB"`**
+- `color` (string) - HEX color code or `"from-percentage"` | Default: `"#BBBBBB"`
 - `background-color` (string) - HEX color code | Default: `"#33BBBBBB"`
 - `width` (int) - Width of the progress bar| Default: `60`
 - `height` (int) - Height of the progress bar| Default: `10`
