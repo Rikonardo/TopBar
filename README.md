@@ -112,7 +112,7 @@ Spacer used to visually separate widget groups
 
 **Settings:**
 
-- `color` (string) - HEX color code | Default: `"#888888"`**
+- `color` (string) - HEX color code | Default: `"#888888"`
 - `width` (int) - Width of the  spacer| Default: `1`
 - `height` (int) - Height of the spacer| Default: `10`
 
