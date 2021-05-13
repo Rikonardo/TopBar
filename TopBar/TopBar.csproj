@@ -192,6 +192,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="UnsupportedConfigVersionException.cs" />
+    <None Include="README.md" />
     <None Include="TopBar_TemporaryKey.pfx" />
     <Resource Include="config.json" />
     <None Include="packages.config" />
