@@ -1,0 +1,101 @@
+{
+  "config-version": 1,
+  "settings": {
+    "use-blur": true,
+    "color": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 100
+    },
+    "current-window": {
+      "color": "#ffffff"
+    }
+  },
+  "widgets": [
+    {
+      "type": "TopBar.Widgets.Shortcut",
+      "settings": {
+        "command": "C:\\Windows\\system32\\cmd.exe",
+        "title": "Command prompt"
+      }
+    },
+    {
+      "type": "TopBar.Widgets.Shortcut",
+      "settings": {
+        "command": "C:\\Windows\\explorer.exe",
+        "title": "File explorer"
+      }
+    },
+    {
+      "type": "TopBar.Widgets.LineSpacer",
+      "settings": {
+        "color": "#888888",
+        "width": 1,
+        "height": 10
+      }
+    },
+    {
+      "type": "TopBar.Widgets.CustomText",
+      "settings": {
+        "color": "#bbbbbb",
+        "text": "RAM: "
+      }
+    },
+    {
+      "type": "TopBar.Widgets.RAMUsageText",
+      "settings": {
+        "color": "#bbbbbb"
+      }
+    },
+    {
+      "type": "TopBar.Widgets.RAMUsageBar",
+      "settings": {
+        "color": "from-percentage",
+        "background-color": "#33bbbbbb",
+        "width": 60,
+        "height": 10,
+        "radius": 2
+      }
+    },
+    {
+      "type": "TopBar.Widgets.LineSpacer",
+      "settings": {
+        "color": "#888888",
+        "width": 1,
+        "height": 10
+      }
+    },
+    {
+      "type": "TopBar.Widgets.CustomText",
+      "settings": {
+        "color": "#bbbbbb",
+        "text": "CPU: "
+      }
+    },
+    {
+      "type": "TopBar.Widgets.CPULoad",
+      "settings": {
+        "color": "rainbow",
+        "line-width": 5,
+        "radius": 2
+      }
+    },
+    {
+      "type": "TopBar.Widgets.LineSpacer",
+      "settings": {
+        "color": "#888888",
+        "width": 1,
+        "height": 10
+      }
+    },
+    {
+      "type": "TopBar.Widgets.Clock",
+      "settings": {
+        "date": true,
+        "seconds": false,
+        "text-color": "#bbbbbb"
+      }
+    }
+  ]
+}

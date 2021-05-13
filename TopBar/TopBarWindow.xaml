@@ -1,0 +1,32 @@
+﻿<Window x:Class="TopBar.TopBarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopBar"
+        mc:Ignorable="d"
+        Title="TopBar"
+        Height="18" Width="800"
+        WindowStyle="None" Topmost="True"
+        WindowStartupLocation="Manual"
+        Left="0" Top="0"
+        Background="{x:Null}"
+        ResizeMode="NoResize"
+        MouseRightButtonUp="OnMouseRightButtonUp"
+        ShowInTaskbar="False" AllowsTransparency="True">
+    <Window.Resources>
+        <ContextMenu x:Key="ContextMenu">
+            <MenuItem Header="Show config file" Click="ContextMenu_ShowConfigTB" />
+            <MenuItem Header="Reload TopBar" Click="ContextMenu_ReloadTB" />
+            <MenuItem Header="Exit TopBar" Click="ContextMenu_ExitTB" />
+        </ContextMenu>
+    </Window.Resources>
+    <Grid>
+        <TextBlock x:Name="WindowName" Foreground="White" Margin="3,0,0,0" HorizontalAlignment="Left"></TextBlock>
+        <Grid HorizontalAlignment="Right">
+            <StackPanel x:Name="WidgetsPanel" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0">
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
