@@ -142,15 +142,15 @@ namespace TopBar
                 }
                 catch (Exception err)
                 {
-                    System.Windows.MessageBox.Show(err.Message, "Failed to setup widgets!");
+                    System.Windows.MessageBox.Show(err.Message, "Failed to load config!");
                     throw err;
                 }
                 // Load extentions
                 foreach (string dll in Directory.GetFiles(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "TopBar", "extensions"), "*.dll"))
                     this.Extentions.Add(Assembly.LoadFile(dll));
                 // Alert if blur disabled
-                if (this.Config != null && (bool)this.Config.settings["use-blur"] && !(bool)cfg.settings["use-blur"])
-                    System.Windows.MessageBox.Show("You must restart TopBar to disable blur!", "Restart to disable blur");
+                // if (this.Config != null && (bool)this.Config.settings["use-blur"] && !(bool)cfg.settings["use-blur"])
+                //     System.Windows.MessageBox.Show("You must restart TopBar to disable blur!", "Restart to disable blur");
                 // Save config
                 this.Config = cfg;
                 // Enable blur
@@ -175,7 +175,7 @@ namespace TopBar
                 }
                 catch (Exception err)
                 {
-                    System.Windows.MessageBox.Show(err.ToString(), "Failed to load config!");
+                    System.Windows.MessageBox.Show(err.ToString(), "Failed to setup widgets!");
                     throw new Exception("");
                 }
             }

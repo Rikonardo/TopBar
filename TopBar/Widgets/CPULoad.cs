@@ -78,16 +78,16 @@ namespace TopBar.Widgets
                     actual.Add(s, Calculate(cs[s], pc.NextSample()));
                     cs[s] = pc.NextSample();
                 }
-                for (int i = 0; i < cores.Count; i++)
+                Application.Current.Dispatcher.Invoke(DispatcherPriority.Background, new Action(delegate
                 {
-                    Application.Current.Dispatcher.Invoke(DispatcherPriority.Background, new Action(delegate
+                    for (int i = 0; i < cores.Count; i++)
                     {
                         try {
                             if (this.MainColor.Equals("from-percentage")) cores[i].Fill = new SolidColorBrush(this.PercentColor(100 - actual["0," + i]));
                             cores[i].Height = actual["0," + i] / 100 * 12;
                         } catch { }
-                    }));
-                }
+                    }
+                }));
             };
             this.timer.Start();
         }
